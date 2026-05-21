@@ -20,23 +20,24 @@
 
 После линеаризации и выполнения прямого интегрального преобразования Лапласа по времени $t$ $f(t) \rightarrow \tilde{f}(\lambda) = \int_0^\infty f(t)e^{-\lambda t} dt$ динамическая модель КДС представляется в виде матрицы передаточных функций $\Phi(\lambda, \mathbf{p})$
 
+
 \begin{equation}
 \begin{aligned}
-	&\mathbf{\tilde{y}}(\lambda) = \Phi(\lambda, \mathbf{p})\mathbf{\tilde{x}}(\lambda),\quad
-	\Phi(\lambda, \mathbf{p}) = [\Phi_{kj}(\lambda, \mathbf{p})] = [Q_{kj}(\lambda, \mathbf{p})/D(\lambda, \mathbf{p})] \\
-	D(\bar{\lambda},\mathbf{p}) &= \overline{D(\lambda, \mathbf{p})}, \quad
-	Q_{kj}(\bar{\lambda},\mathbf{p}) = \overline{Q_kj(\lambda, \mathbf{p})}, \quad
-	k = 1,2,\dots,N_y, \quad
-	j = 1,2,\dots,N_x.
-\end{aligned}  
+        &\mathbf{\tilde{y}}(\lambda) = \Phi(\lambda, \mathbf{p})\mathbf{\tilde{x}}(\lambda),\quad
+        \Phi(\lambda, \mathbf{p}) = [\Phi_{kj}(\lambda, \mathbf{p})] = [Q_{kj}(\lambda, \mathbf{p})/D(\lambda, \mathbf{p})] \\
+        D(\bar{\lambda},\mathbf{p}) &= \overline{D(\lambda, \mathbf{p})}, \quad
+        Q_{kj}(\bar{\lambda},\mathbf{p}) = \overline{Q_{kj}(\lambda, \mathbf{p})}, \quad
+        k = 1,2,\dots,N_y, \quad
+        j = 1,2,\dots,N_x.
+\end{aligned}
 \end{equation}
 
-Здесь характеристический $D(\lambda, \mathbf{p})$ и возмущающиие $Q_{kj}(\lambda, \mathbf{p})$ квазимногочлены аналитичны по $\lambda$ при $\Re\lambda > \sigma_0$, $\sigma_0 \in (-\infty, 0)$, если математические модели элементов КДС с распределенными по пространтству параметрами учитывают малую, но конечную диссипацию энергии. Обобщенная степень$n \in \mathbb{R}$ характеристического квазимногочлена $D(\lambda, \mathbf{p})$ находится из условия
+Здесь характеристический $D(\lambda, \mathbf{p})$ и возмущающие $Q_{kj}(\lambda, \mathbf{p})$ квазимногочлены аналитичны по $\lambda$ при $\Re\lambda > \sigma_0$, $\sigma_0 \in (-\infty, 0)$, если математические модели элементов КДС с распределенными по пространству параметрами учитывают малую, но конечную диссипацию энергии. Обобщенная степень$n \in \mathbb{R}$ характеристического квазимногочлена $D(\lambda, \mathbf{p})$ находится из условия
 
 \begin{equation}
-	\lim_{\lambda \to \infty}\lambda^{-n}D(\lambda, \mathbf{p}) = C_a(\mathbf{p}), \quad
-	0 < |C_a(\mathbf{p})| < \infty, \quad
-	\Re\lambda>-\infty.
+        \lim_{\lambda \to \infty}\lambda^{-n}D(\lambda, \mathbf{p}) = C_a(\mathbf{p}), \quad
+        0 < |C_a(\mathbf{p})| < \infty, \quad
+        \Re\lambda>-\infty.
 \end{equation}
 
 \end{document}
